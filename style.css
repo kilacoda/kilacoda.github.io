@@ -91,3 +91,64 @@ footer {
     right: 0;
     color: gray;
 }
+
+.accordion-item {
+    border: 1px solid #cb8d29;
+    border-radius: 5px;
+    margin-bottom: 14px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    gap: 12px;
+    cursor: pointer;
+    list-style: none;
+    padding: 14px 20px;
+    font-weight: bold;
+    background-color: #fdf1da;
+    width: 75vw;
+}
+
+.accordion-header::-webkit-details-marker {
+    display: none;
+}
+
+/* .accordion-header::after {
+    content: "";
+    flex-shrink: 0;
+    transition: transform 2s ease;
+} */
+
+:root {
+    interpolate-size: allow-keywords;
+}
+
+.accordion-item::details-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.8s ease-in, content-visibility 1s ease-in allow-discrete;
+}
+
+.accordion-item[open]::details-content {
+    height: auto;
+}
+
+.accordion-item[open] .accordion-header {
+    border-bottom: 1px solid #cb8d29;
+}
+
+.accordion-content {
+    padding: 12px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.accordion-image {
+    height: 60%;
+    width: 60%;
+}
