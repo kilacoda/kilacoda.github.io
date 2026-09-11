@@ -3,16 +3,21 @@ body header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 80vw;
+    width: 60vw;
     margin: auto;
 }
 
+header h1 {
+    font-size: 300%;
+    margin-bottom: 0;
+}
 body {
-    background-color: ivory;
+    background-color: rgb(145, 145, 58);
 }
 
 header {
     border: 2px solid;
+    margin-top: 20px;
 }
 
 #headshot {
@@ -56,7 +61,7 @@ h1 {
     justify-content: space-evenly;
     align-items: stretch;
     margin: auto;
-    width: 75vw;
+    width: 60vw;
 }
 
 .projects {
@@ -67,13 +72,13 @@ h1 {
     /* justify-content: space-evenly; */
     align-items: stretch;
     margin: auto;
-    width: 75vw;
+    width: 60vw;
 }
 
 .lede {
     margin: auto;
-    width: 75vw;
-    padding-top: 5%;
+    width: 60vw;
+    padding-top: 30px;
     font-size: large;
 }
 
@@ -97,6 +102,7 @@ footer {
     border-radius: 5px;
     margin-bottom: 14px;
     overflow: hidden;
+    width: 60vw;
 }
 
 .accordion-header {
@@ -109,7 +115,7 @@ footer {
     padding: 14px 20px;
     font-weight: bold;
     background-color: #fdf1da;
-    width: 75vw;
+    width: 60vw;
 }
 
 .accordion-header::-webkit-details-marker {
@@ -146,9 +152,23 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     gap: 20px;
+    background-color: aliceblue;
 }
 
 .accordion-image {
     height: 60%;
     width: 60%;
+}
+
+.main-content {
+    background-color: rgb(220, 223, 213);
+    width: fit-content;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 15px;
 }
