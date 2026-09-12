@@ -76,7 +76,7 @@ h1 {
 
 }
 
-.projects {
+.projects, .contact-me {
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 2%;
@@ -110,11 +110,12 @@ footer {
 }
 
 .accordion-item {
-    border: 1px solid #cb8d29;
+    border: 3px solid #000000;
     border-radius: 5px;
     margin-bottom: 14px;
     overflow: hidden;
     width: 60vw;
+    border-radius: 7px;
 }
 
 .accordion-header {
@@ -126,7 +127,7 @@ footer {
     list-style: none;
     padding: 14px 20px;
     font-weight: bold;
-    background-color: #e4e7e8;
+    background-color: #eef2f4;
     width: 60vw;
 }
 
