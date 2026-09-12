@@ -27,10 +27,12 @@ header {
 }
 
 #headshot {
-    height: 15lvh;
+    /* height: 15lvh; */
     width: 15lvw;
     clip-path: circle();
     object-fit: contain;
+
+
 }
 
 .links {
@@ -145,7 +147,7 @@ footer {
 }
 
 .accordion-header-text {
-    width: 55lvw;
+    width: 50lvw;
 }
 .accordion-header::-webkit-details-marker {
     display: none;
@@ -190,8 +192,12 @@ footer {
 }
 
 .accordion-image {
-    height: 60%;
-    width: 60%;
+    height: 55svh;
+    width: 55svw;
+}
+
+.accordion-content-images {
+
 }
 
 .main-content {
