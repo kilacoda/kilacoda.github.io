@@ -12,6 +12,7 @@ header h1 {
     margin-bottom: 0;
     padding: 4px;
     border-bottom: 3px dashed;
+    text-align: center;
 }
 
 
@@ -128,6 +129,8 @@ footer {
     left: 0;
     right: 0;
     color: gray;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .accordion-item {
