@@ -10,7 +10,10 @@ body header {
 header h1 {
     font-size: 300%;
     margin-bottom: 0;
+    padding: 4px;
+    border-bottom: 3px dashed;
 }
+
 
 body {
     /* background-color: rgb(145, 145, 58); */
@@ -80,6 +83,7 @@ h1 {
     align-items: center;
     margin: auto;
     width: 60vw;
+    gap: 40px;
 
     @media screen and (width <=900px) {
         flex-direction: column;
@@ -136,9 +140,9 @@ footer {
 }
 
 .accordion-header {
-    /* display: flex; */
+    display: flex;
     /* justify-content: space-between; */
-    /* align-items: center; */
+    align-items: center;
     gap: 12px;
     cursor: pointer;
     list-style: none;
@@ -150,6 +154,17 @@ footer {
 
 .accordion-header-text {
     width: 50lvw;
+}
+
+.accordion-header::before {
+    content: "▶";
+    display: inline-block;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.accordion-item[open] .accordion-header::before {
+    transform: rotate(90deg);
 }
 
 .accordion-header::-webkit-details-marker {
@@ -204,6 +219,7 @@ footer {
 .accordion-content-images {
     display: flex;
     flex-direction: row;
+
     @media screen and (width <=1200px) {
         flex-direction: column;
     }
